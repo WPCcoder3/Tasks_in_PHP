@@ -1,7 +1,7 @@
 <?php
 echo "Введите x: ";
 
-$x = (float)(fgets(STDIN));
+$x = (float)trim(fgets(STDIN));
 
 $y = asin(pow(sqrt(abs($x)) / (sqrt(abs($x)) + 1), 5)) + pow($x * $x + 1, 1 / 5) + log(pow(2, sin($x)) + pow(abs($x), cos($x)), 2);
 
